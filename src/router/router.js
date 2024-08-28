@@ -3,7 +3,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ShowMovies from '@/components/ShowMovies.vue'
 import AddEditMovie from '@/components/AddEditMovie.vue'
-import NotFound from '@/components/NotFound.vue'
 Vue.use(VueRouter) 
 
 const routes = [ 
@@ -25,21 +24,8 @@ const routes = [
     { 
         // Redirect any undefined routes to Movie component
         path: '*',
-        component:NotFound,
-      }
-	// { 
-	// 	path: '/about', 
-	// 	name: 'About', 
-	// 	// The route level code-splitting 
-	// 	// this generates a separate chunk 
-	// 	// (about.[hash].js) for this route 
-	// 	// which is lazy-loaded when the 
-	// 	// route is visited. 
-	// 	component:()=> import( 
-	// 		/* webpackChunkName: "about" */
-	// 		'../views/About.vue'
-	// 	) 
-	// }, 
+		redirect: '/movies',
+    }
 ] 
 
 // Create Vue Router Object 
