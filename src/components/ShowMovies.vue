@@ -38,16 +38,16 @@
                 <v-icon @click="editMovie(movie.id)" class="edit-icon ma-2"
                   >mdi-pencil</v-icon
                 >
-                <div>
+                <!-- <div>
                   <v-btn @click="onAddToFav(movie)" >Fav.</v-btn>
-                  </div>
+                  </div> -->
               </div>
             </v-card-actions>
           </v-card>
         </v-col>
       </v-row>
     </div>
-    <div style="margin: 10px 0px;">
+    <!-- <div style="margin: 10px 0px;">
       <h2>Fav. Movies</h2>
       <v-row>
         <v-col
@@ -87,7 +87,7 @@
           </v-card>
         </v-col>
       </v-row>
-    </div>
+    </div> -->
     <div>
       <v-overlay :value="loading">
         <v-progress-circular indeterminate size="64"></v-progress-circular>
